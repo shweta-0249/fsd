@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Names to Array</title>
+</head>
+<body>
+    <h1>Add Names to Array</h1>
+    <input type="text" id="firstName" placeholder="Enter first name">
+    <input type="text" id="lastName" placeholder="Enter last name">
+    <button onclick="addNames()">Add Names</button>
+    <p id="output"></p>
+
+    <script>
+        const namesArray = [];
+
+        function addNames() {
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const fullName = ${firstName} ${lastName};
+
+            if (firstName && lastName) {
+                namesArray.push(fullName);
+                document.getElementById("output").textContent = Names in array: ${namesArray.join(', ')};
+            } else {
+                document.getElementById("output").textContent = "Please enter both first name and last name.";
+            }
+
+            // Clear input fields after adding the names
+            document.getElementById("firstName").value = '';
+            document.getElementById("lastName").value = '';
+        }
+    </script>
+</body>
+</html>
+//wap to find vowels in given string
+wap to find prime number from 1to100
+wap to inter a valid mobile number 
+write a program to check inter name or email id is valid or not//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility Program</title>
+</head>
+<body>
+    <h1>utilityProgram</h1>
+
+    <!-- Odd or Even Check -->
+    <section>
+        <h2>Odd or Even Checker</h2>
+        <input type="number" id="number" placeholder="Enter a number">
+        <button onclick="checkOddEven()">Check</button>
+        <p id="oddEvenOutput"></p>
+    </section>
+
+    <!-- Greetings of the Day -->
+    <section>
+        <h2>Greetings of the Day</h2>
+        <button onclick="displayGreetings()">Get Greetings</button>
+        <p id="greetingsOutput"></p>
+    </section>
+
+    <!-- Temperature Check -->
+    <section>
+        <h2>Temperature Checker</h2>
+        <input type="number" id="temperature" placeholder="Enter temperature (°C)">
+        <button onclick="checkTemperature()">Check</button>
+        <p id="temperatureOutput"></p>
+    </section>
+
+    <script>
+        // JavaScript code integrated into the HTML file
+
+        // Check if a number is odd or even
+        function checkOddEven() {
+            const number = parseInt(document.getElementById("number").value);
+            const output = document.getElementById("oddEvenOutput");
+            if (number % 2 === 0) {
+                let table = Even. Table of ${number}:<br>;
+                for (let i = 1; i <= 10; i++) {
+                    table += ${number} x ${i} = ${number * i}<br>;
+                }
+                output.innerHTML = table;
+            } else {
+                output.textContent = "Odd.";
+            }
+        }
+
+        // Display greetings of the day
+        function displayGreetings() {
+            const hour = new Date().getHours();
+            const output = document.getElementById("greetingsOutput");
+            if (hour >= 5 && hour < 12) output.textContent = "Good Morning!";
+            else if (hour >= 12 && hour < 17) output.textContent = "Good Afternoon!";
+            else if (hour >= 17 && hour < 21) output.textContent = "Good Evening!";
+            else output.textContent = "Good Night!";
+        }
+
+        // Check if it's hot or cold
+        function checkTemperature() {
+            const temp = parseFloat(document.getElementById("temperature").value);
+            const output = document.getElementById("temperatureOutput");
+            if (temp > 30) output.textContent = "It's Hot!";
+            else if (temp < 15) output.textContent = "It's Cold!";
+            else output.textContent = "The weather is Pleasant.";
+        }
+    </script>
+</body>
+</html>
+//write a program to display a of b as per the given input number
+//wap to add first name and last name to given array
+//to find the double squre root odd or even number respectively
