@@ -1,0 +1,99 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e50914;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar .signin-btn {
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('https://th.bing.com/th/id/OIP.0UK_vowQJBw9a9M7nreEgAHaEK?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero-section .cta-btn {
+    background-color: #e50914;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin: 20px 0;
+    font-size: 1.8rem;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.movie-card {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+}
